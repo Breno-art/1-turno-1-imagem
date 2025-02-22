@@ -6,19 +6,19 @@ function carregar() {
     var minuto = data.getMinutes()
     msg.innerHTML = `Agora são ${hora}:${minuto}`
     if(hora >= 0 && hora <12){
-        img.src = "manha.png"
+        img.src = "imgs/manha.png"
         document.body.style.background = "rgb(248, 188, 128)"
         document.getElementById("retangulo").style.background = "#c6c4bf"
     }else if(hora >= 12 && hora < 17){
-        img.src = "dia.png"
+        img.src = "imgs/dia.png"
         document.body.style.background = "#7bc0d5"
         document.getElementById("retangulo").style.background = "#197b9d"
     }else if(hora >= 17 && hora < 19){
-        img.src = "tarde.png"
+        img.src = "imgs/tarde.png"
         document.body.style.background = "#f07e17"
         document.getElementById("retangulo").style.background = "#c06b2e"
     }else{
-        img.src = "noite.png"
+        img.src = "imgs/noite.png"
         document.body.style.background = "#217577"
         document.getElementById("retangulo").style.background = "#133a3a"
     }
